@@ -1,0 +1,82 @@
+<!-- style.css -->
+body {
+margin: 0;
+font-family: 'Trebuchet MS', sans-serif;
+background: #d7d7d7; /* unified light grey background */
+color: #DAA520;
+text-align: center;
+}
+
+
+.brand {
+font-family: 'Boopee', cursive;
+font-size: 2.8em;
+color: #FFD700;
+text-shadow: 0px 0px 4px #DAA520,
+0px 0px 8px rgba(218, 165, 32, 0.8),
+0px 0px 14px rgba(255, 215, 0, 0.8);
+}
+
+
+.logo img {
+width: 150px;
+height: auto;
+}
+
+
+h2 {
+font-weight: normal;
+color: #DAA520;
+text-shadow: 0px 0px 4px rgba(255, 215, 0, 0.8);
+}
+
+
+.coming-soon {
+font-size: 1.6em;
+font-style: italic;
+color: #FFD700;
+text-shadow: 0px 0px 3px #DAA520,
+0px 0px 8px rgba(255, 185, 15, 0.7);
+}
+
+
+.note {
+font-size: 3em;
+color: #FFD700;
+text-shadow: 0px 0px 5px #DAA520,
+0px 0px 10px rgba(255, 185, 15, 0.9);
+animation: glow 2s infinite alternate;
+}
+
+
+@keyframes glow {
+from { text-shadow: 0px 0px 6px #DAA520, 0px 0px 12px #FFA500; }
+to { text-shadow: 0px 0px 10px #FFD700, 0px 0px 20px #FFB90F; }
+}
+
+
+header {
+padding: 20px;
+background: #111;
+border-bottom: 2px solid #FFD700;
+}
+
+
+nav a {
+margin: 0 15px;
+text-decoration: none;
+color: #DAA520;
+font-weight: bold;
+}
+
+
+nav a:hover {
+color: #FFD700;
+}
+
+
+section {
+padding: 40px 20px;
+border-bottom: 1px solid #ccc;
+}
+}
