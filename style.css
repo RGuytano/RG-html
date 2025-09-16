@@ -17,20 +17,24 @@ body {
   background: var(--grey-warm);
   color: var(--gold-base);
   text-align: center;
+  overflow-x: hidden;
 }
 
-.background img {
+.background {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  background: url('landing-bg.png') no-repeat center center;
+  background-size: cover;
   z-index: -1;
 }
 
 .overlay {
-  padding-top: 50px;
+  position: relative;
+  top: 25%;
+  text-align: center;
 }
 
 .brand {
@@ -42,17 +46,9 @@ body {
                0 0 8px rgba(255, 215, 0, 0.6);
 }
 
-.tagline {
-  font-size: 1.6em;
-  color: var(--gold-base);
-  text-shadow: 1px 1px 2px #5C4000,
-               0 0 5px rgba(218, 165, 32, 0.8);
-}
-
 .coming-soon {
-  font-size: 1.5em;
-  font-style: italic;
-  margin-top: 20px;
+  font-size: 1.6em;
+  margin-top: 15px;
   color: var(--gold-primary);
   text-shadow: 1px 1px 2px #5C4000,
                0 0 6px var(--gold-accent);
