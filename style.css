@@ -1,0 +1,90 @@
+<!-- style.css -->
+:root {
+  --gold-primary: #FFD700;
+  --gold-base: #C5A028;
+  --gold-accent: #FFB90F;
+  --copper-orange: #E97400;
+  --red-fire: #B22222;
+  --blue-electric: #0066FF;
+  --indigo-night: #191970;
+  --black-charcoal: #111111;
+  --grey-warm: #D7D7D7;
+}
+
+body {
+  margin: 0;
+  font-family: 'Trebuchet MS', sans-serif;
+  background: var(--grey-warm);
+  color: var(--gold-base);
+  text-align: center;
+}
+
+.background img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay {
+  padding-top: 50px;
+}
+
+.brand {
+  font-family: 'Boopee', cursive;
+  font-size: 3em;
+  color: var(--gold-primary);
+  text-shadow: 1px 1px 2px #5C4000,
+               0 0 4px var(--gold-base),
+               0 0 8px rgba(255, 215, 0, 0.6);
+}
+
+.tagline {
+  font-size: 1.6em;
+  color: var(--gold-base);
+  text-shadow: 1px 1px 2px #5C4000,
+               0 0 5px rgba(218, 165, 32, 0.8);
+}
+
+.coming-soon {
+  font-size: 1.5em;
+  font-style: italic;
+  margin-top: 20px;
+  color: var(--gold-primary);
+  text-shadow: 1px 1px 2px #5C4000,
+               0 0 6px var(--gold-accent);
+}
+
+.coming-soon .highlight {
+  color: var(--blue-electric);
+  font-weight: bold;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.grid img {
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid var(--gold-primary);
+  transition: transform 0.3s ease;
+}
+
+.grid img:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  padding: 20px;
+  font-size: 0.9em;
+  background: var(--black-charcoal);
+  color: var(--gold-base);
+}
